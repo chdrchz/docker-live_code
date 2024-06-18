@@ -9,7 +9,7 @@ RUN mkdir -p /var/run/mysqld && chown -R mysql:mysql /var/run/mysqld
 
 # Set environment variables for MySQL
 ENV MYSQL_ROOT_PASSWORD=my-pw
-ENV MYSQL_DATABASE=mydatabase
+ENV MYSQL_DATABASE=my-database
 
 # Expose MySQL port
 EXPOSE 3306
