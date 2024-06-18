@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 
 # Update package list and install MySQL server
-RUN apt-get update && apt-get install -y mysql-server
+RUN apt-get update && apt-get install -y mysql-server sudo
 
 # Ensure MySQL can run as a service
 RUN mkdir -p /var/run/mysqld && chown -R mysql:mysql /var/run/mysqld
